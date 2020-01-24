@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Goods";
+}
+
+    <h2>Goods</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Manufacturer</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Good count</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in ViewBag.Goods)
+        {
+        <tr>
+            <td>@c.GoodId</td>
+            <td>@c.GoodName</td>
+            <td>@c.ManufacturerName</td>
+            <td>@c.CategoryName</td>
+            <td>@c.Price</td>
+            <td>@c.GoodCount</td>
+        </tr>
+        }
+    </tbody>
+</table>

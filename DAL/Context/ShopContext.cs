@@ -24,7 +24,7 @@ namespace DAL.Context
 
 			modelBuilder.Entity<Good>()
 				.Property(e => e.Price)
-				.HasPrecision(19, 4);
+				.HasPrecision(19, 2);
 
 			modelBuilder.Entity<Good>()
 				.Property(e => e.GoodCount)

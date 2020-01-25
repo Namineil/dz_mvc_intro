@@ -5,19 +5,19 @@
 
     <h2>Manufacturers</h2>
 
-<table class="table table-bordered">
-    <thead>
+<table class="table border">
+    <thead class="thead-dark">
         <tr>
-            <th>Id</th>
-            <th>Manufacturer</th>
+            <th scope="col">Id</th>
+            <th scope="col">Manufacturer</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var c in ViewBag.Manufacturers)
         {
             <tr>
-                <td>@c.ManufacturerId</td>
-                <td>@c.ManufacturerName</td>
+                <td scope="row">@c.ManufacturerId</td>
+                <td scope="row">@c.ManufacturerName</td>
             </tr>
         }
     </tbody>
